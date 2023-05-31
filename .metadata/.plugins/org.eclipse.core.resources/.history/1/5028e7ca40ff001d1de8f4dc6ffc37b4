@@ -1,0 +1,23 @@
+package br.com.senaisp.richard.licao04;
+
+public class TesteString {
+
+	public static void main(String[] args) {
+		String nome1 = "Maria";
+		String nome2 = new String("Maria");
+		//comparando endereço de memória
+		if ( nome1 == nome2 ) {
+			System.out.println("Endereços de memória Iguais!");
+		} else {
+			System.out.println("Endereços de memória Diferentes");
+		}
+		//Para comparar conteúdo, tenho que usar equals
+		if ( nome1.equals(nome2)) {
+			System.out.println("Nomes Iguais!");
+		} else {
+			System.out.println("Nomes Diferentes");
+		}
+
+	}
+
+}

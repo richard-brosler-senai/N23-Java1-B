@@ -1,0 +1,17 @@
+package br.com.senaisp.richard.licao04;
+
+public class Estudante {
+	//Campos de instância ou Variáveis de instância
+	public int id;
+	public String nome;
+	public String cpf;
+	public double media;
+	
+	@Override
+	public String toString() {
+		return  "Id : " + id + 
+				"nome : " + nome + 
+				"cpf : " + cpf +
+				"media : " + media;
+	}
+}

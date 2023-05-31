@@ -1,0 +1,17 @@
+package br.com.senaisp.richard.licao04;
+
+public class TesteString {
+
+	public static void main(String[] args) {
+		String nome1 = "Maria";
+		String nome2 = "Maria";
+		
+		if ( nome1 == nome2 ) {
+			System.out.println("Nomes Iguais!");
+		} else {
+			System.out.println("Nomes Diferentes");
+		}
+
+	}
+
+}
