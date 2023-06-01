@@ -1,0 +1,30 @@
+package br.com.senaisp.richard.projeto;
+
+import java.util.Scanner;
+
+public class TesterProduto {
+	public static final double PIII = 3.141516; //constante
+	public static void main(String[] args) {
+		//Criando o produto
+		Produto prod = new Produto();
+		//Atribuindo os valores para testar
+		prod.setNumItem(1);
+		prod.setNomeItem("Caneta esferográfica");
+		prod.setQtdeItem(100);
+		prod.setPrecoItem(1.50);
+		//Criando o segundo produto usando o outro constructor
+		Produto prod2 = new Produto(2, "Lápis preto", 50, 2.00);
+		//Mostrando os valores
+		/*
+		System.out.println("Número do item: " + prod.getNumItem());
+		System.out.println("Nome do item: " + prod.getNomeItem());
+		System.out.println("Qtde do item: " + prod.getQtdeItem());
+		System.out.println("Preço do item: " + prod.getPrecoItem());
+		*/
+		//Mostrando os dados do produto
+		System.out.println(prod.toString());
+		//Mostrando o produto 2
+		System.out.println(prod2.toString());
+	}
+
+}

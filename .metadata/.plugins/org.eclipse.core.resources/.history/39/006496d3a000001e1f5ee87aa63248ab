@@ -1,0 +1,36 @@
+package br.com.senaisp.richard.licao04;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class TesteCalculadora2 {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in).useLocale(Locale.US);
+		//Variáveis que irei precisar
+		int op01, op02;
+		String operador;
+		double resultado=0;
+		
+		System.out.println("Bem vindo a calculadora do Java");
+		System.out.print("Digite o primeiro operando: ");
+		op01 = scn.nextInt();
+		System.out.print("Digite o segundo operando: ");
+		op02 = scn.nextInt();
+		System.out.println("Digite o operador: ");
+		operador = scn.nextLine();
+		//Lógica do código
+		switch (operador.charAt(0)) {
+		case '+' : resultado = op01 + op02; break;
+		case '-' : resultado = op01 - op02; break;
+		case '*' : resultado = op01 * op02; break;
+		case '/' : resultado = op01 / op02; break;
+		default: System.out.println("Operador inválido!");
+		}
+		//Mostrando resultado
+		System.out.println("O resultado da operação é " + resultado);
+		//Fechando o scanner
+		scn.close();
+	}
+
+}

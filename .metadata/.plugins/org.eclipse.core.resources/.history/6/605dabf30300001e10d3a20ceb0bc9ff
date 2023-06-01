@@ -1,0 +1,10 @@
+package br.com.senaisp.richard.projeto;
+/**
+ * Classe Produto para projeto Eclipse
+ * @author Richard Brosler
+ * @version 2023-05-31
+ * 
+ */
+public class Produto {
+
+}

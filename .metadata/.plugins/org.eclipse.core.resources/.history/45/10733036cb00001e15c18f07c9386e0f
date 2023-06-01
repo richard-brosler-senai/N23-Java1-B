@@ -1,0 +1,24 @@
+package br.com.senaisp.richard.licao04;
+
+import java.util.Scanner;
+
+public class TesteCalculadora {
+
+	public static void main(String[] args) {
+		//criando objeto para capturar valores no teclado
+		Scanner sc = new Scanner(System.in);
+		//Definindo variáveis
+		double op01, op02, resultado;
+		String operador;
+		//Começando o programa
+		System.out.println("Digite o primeiro operando: ");
+		op01 = sc.nextDouble(); //solicitando valor fracionário
+
+		System.out.println("Digite o segundo operando: ");
+		op02 = sc.nextDouble(); //solicitando valor fracionário
+		
+		System.out.println("Digite o operador: ");
+		operador = sc.nextLine(); //solicitando um texto
+	}
+
+}

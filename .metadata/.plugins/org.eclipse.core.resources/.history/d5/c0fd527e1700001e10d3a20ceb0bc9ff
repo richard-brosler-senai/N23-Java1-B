@@ -1,0 +1,16 @@
+package br.com.senaisp.richard.licao04;
+
+public class TesteCalculadora {
+	
+	public static void main(String[] args) {
+		int idade = 15;
+		if (idade == 15) {
+			int idade2 = 20;
+			System.out.println("Idade 2" + idade2);
+		}
+		System.out.println("Idade 1 " + idade);
+		System.out.println("Idade 2 " + idade2);
+		
+	}
+
+}

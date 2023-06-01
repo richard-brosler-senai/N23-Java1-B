@@ -1,0 +1,21 @@
+package br.com.senaisp.richard.projeto;
+
+public class TesterProduto {
+
+	public static void main(String[] args) {
+		//Criando o produto
+		Produto prod = new Produto();
+		//Atribuindo os valores para testar
+		prod.setNumItem(1);
+		prod.setNomeItem("Caneta esferográfica");
+		prod.setQtdeItem(100);
+		prod.setPrecoItem(1.50);
+		//Mostrando os valores
+		System.out.println("Número do item: " + prod.getNumItem());
+		System.out.println("Nome do item: " + prod.getNomeItem());
+		System.out.println("Qtde do item: " + prod.getQtdeItem());
+		System.out.println("Preço do item: " + prod.getPrecoItem());
+
+	}
+
+}

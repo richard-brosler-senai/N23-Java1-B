@@ -1,0 +1,11 @@
+package br.com.senaisp.richard.projeto;
+
+public class TesterProduto {
+
+	public static void main(String[] args) {
+		Produto prod = new Produto();
+		
+
+	}
+
+}
