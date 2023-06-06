@@ -1,0 +1,9 @@
+package br.com.senaisp.richard.licao05;
+
+public class TesteOperadorTernario {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

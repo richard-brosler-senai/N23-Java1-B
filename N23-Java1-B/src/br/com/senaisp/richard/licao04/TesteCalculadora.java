@@ -1,6 +1,5 @@
 package br.com.senaisp.richard.licao04;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class TesteCalculadora {
@@ -64,6 +63,7 @@ public class TesteCalculadora {
 		
 		//Mostrando resultado
 		System.out.println("O resultado é "+ resultado);
+		sc.close();
 	}
 
 }

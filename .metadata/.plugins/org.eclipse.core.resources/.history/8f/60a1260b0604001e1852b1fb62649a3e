@@ -1,0 +1,29 @@
+package br.com.senaisp.richard.licao06;
+
+import java.util.Scanner;
+
+public class TesteArray {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//Definindo um vetor (array de uma dimensão)
+		double[] medias;
+		//criando o vetor
+		medias = new double[4];
+		//Solicitando as médias
+		for(int i=0;i<medias.length;i++){
+			System.out.println("Digite a média " + (i+1) + ":");
+			try {
+				medias[i] = sc.nextDouble();
+			} catch(Exception e) {
+				sc.nextLine();
+				System.out.println("Valor inválido! Redigite.");
+			}
+		}
+		System.out.println("Listando as médias:\n");
+		for(int i=0;i<medias.length;i++) {
+			System.out.println("Média " + (i+1) + ": " + medias[i]);
+		}
+	}
+
+}

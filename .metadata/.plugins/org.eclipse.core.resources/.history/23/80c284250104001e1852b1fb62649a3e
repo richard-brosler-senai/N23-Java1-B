@@ -1,0 +1,61 @@
+package br.com.senaisp.richard.projeto;
+
+import java.util.Scanner;
+
+public class TesterProduto {
+	public static final double PIII = 3.141516; // constante
+	public static final int valor2 = 0b0010; // representa 2 em binário
+	public static final int valorHex = 0xFF; // representa 255 em hexadecimal
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		// Definindo variáveis
+		int tmpCodigo, tmpQtde;
+		String tmpNome;
+		double tmpPreco;
+		Produto prod=null, prod2;//=null;
+		for (int i = 0; i < 2; i++) {
+			// Solicitando o código do produto
+			System.out.println("Digite o código do produto "+(i+1)+":");
+			tmpCodigo = sc.nextInt();
+			// retirando o buffer do enter
+			sc.nextLine();
+			System.out.println("Digite o nome do produto:");
+			tmpNome = sc.nextLine();
+
+			System.out.println("Digite a quantidade do produto:");
+			tmpQtde = sc.nextInt();
+
+			System.out.println("Digite o preço do produto:");
+			tmpPreco = sc.nextDouble();
+			
+			if (i==0) {
+				// Criando o produto+
+				prod = new Produto();
+				// Atribuindo os valores para testar
+				prod.setNumItem(tmpCodigo);
+				prod.setNomeItem(tmpNome);
+				prod.setQtdeItem(tmpQtde);
+				prod.setPrecoItem(tmpPreco);
+			} else {
+				// Criando o segundo produto usando o outro constructor
+				prod2 = new Produto(tmpCodigo, 
+						tmpNome, tmpQtde, tmpPreco);
+			}
+		}
+
+		
+		// Mostrando os valores
+		/*
+		 * System.out.println("Número do item: " + prod.getNumItem());
+		 * System.out.println("Nome do item: " + prod.getNomeItem());
+		 * System.out.println("Qtde do item: " + prod.getQtdeItem());
+		 * System.out.println("Preço do item: " + prod.getPrecoItem());
+		 */
+		// Mostrando os dados do produto
+		System.out.println(prod.toString());
+		// Mostrando o produto 2
+		System.out.println(prod2.toString());
+	}
+
+}

@@ -1,0 +1,17 @@
+package br.com.senaisp.richard.licao05;
+
+import java.util.Scanner;
+
+public class TesteScanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//Definindo variáveis
+		String nome;
+		//Começando o programa
+		System.out.println("Digite seu nome: ");
+		nome = sc.next();
+		System.out.println("Olá," + nome);
+	}
+
+}

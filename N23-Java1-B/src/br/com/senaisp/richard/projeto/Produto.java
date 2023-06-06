@@ -11,6 +11,7 @@ public class Produto {
 	private String nomeItem;
 	private int qtdeItem;
 	private double precoItem;
+	private boolean status;
 	//constructors
 	  //padrão sem parâmetros
 	public Produto() {
@@ -18,6 +19,7 @@ public class Produto {
 		nomeItem = "Sem nome";
 		qtdeItem = 0;
 		precoItem = 0;//conversão implícita de inteiro para double
+		status = true;
 	}
 	//construtor com parametros
 	public Produto(int nIt, String nomIt, int qtdIt, double prcIt)
@@ -26,6 +28,7 @@ public class Produto {
 		setNomeItem(nomIt);
 		setQtdeItem(qtdIt);
 		setPrecoItem(prcIt);
+		status = true;
 	}
 	//Getters e Setters
 	public int getNumItem() {
@@ -55,6 +58,12 @@ public class Produto {
 	public void setPrecoItem(double precoItem) {
 		this.precoItem = precoItem;
 	}
+	public boolean isStatus() {
+		return status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
 	@Override
 	//modificador de acesso
 	// |     Tipo de retorno
@@ -64,6 +73,13 @@ public class Produto {
 		return "Número do item: " + getNumItem() + 
 			   "\nNome do item: " + getNomeItem() + 
 			   "\nQtde do item: " + getQtdeItem() + 
-			   "\nPreço do item: R$ " + getPrecoItem();
+			   "\nPreço do item: R$ " + getPrecoItem() +
+			   "\nValor do Invetário: R$ " + getInventario() +
+			   "\nSituação do item: " + 
+			   ( isStatus() ? "Ativo" : "Inativo" );
+	}
+	
+	public double getInventario() {
+		return precoItem * qtdeItem;
 	}
 }
