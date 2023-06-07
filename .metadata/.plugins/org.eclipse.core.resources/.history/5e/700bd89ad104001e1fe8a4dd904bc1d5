@@ -1,0 +1,13 @@
+package br.com.senaisp.richard.licao06;
+
+public class TesteBaralho {
+
+	public static void main(String[] args) throws Exception {
+		Baralho baralho = new Baralho();
+		//Sorteando a carta
+		CartaBaralho carta = baralho.getCartaBaralho();
+		//Mostrando a carta
+		System.out.println(carta.getCartaAscii());
+	}
+
+}

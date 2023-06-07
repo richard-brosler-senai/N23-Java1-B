@@ -1,0 +1,18 @@
+package br.com.senaisp.richard.licao06;
+
+import java.util.Random;
+
+public class Baralho {
+	//Matriz tridimensional 1º naipe, 2º carta, 3º usado ou não
+	private CartaBaralho[][] baralhoCartas;
+	private Random rnd;
+	private boolean[][] cartaUtilizada;
+	//constructor
+	public Baralho() {
+		//Dimensionando a matriz
+		baralhoCartas = new CartaBaralho[4][13];
+		rnd = new Random(); //criando o meu gerador de random
+		cartaUtilizada = new boolean[4][13];
+	}
+	
+}

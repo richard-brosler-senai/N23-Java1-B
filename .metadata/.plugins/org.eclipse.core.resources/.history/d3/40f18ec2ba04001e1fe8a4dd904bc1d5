@@ -1,0 +1,14 @@
+package br.com.senaisp.richard.licao06;
+
+public class CartaBaralho {
+	//campos estaticos (constantes)
+	private static final String[] naipesNomes = {"Ouro",
+			"Copas", "Espada", "Paus"};
+	private static final String[] cartasNomes = {"A","2",
+			"3","4","5","6","7","8","9","10","Q","J","K"};
+	private static final String[] naipeImagens = {"♦","♥","♠","♣"};
+	//Naipe será de 1 a 4
+	private int naipe;
+	//Numero será de 1 a 13
+	private int numero;
+}

@@ -1,0 +1,27 @@
+package br.com.senaisp.richard.licao06;
+
+import java.util.Scanner;
+
+public class TesteBaralho {
+
+	public static void main(String[] args) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		Baralho baralho = new Baralho();
+		int totalPontos = 0;
+		char continuar = 'S';
+		while(continuar=='S' || continuar=='s'){
+			//Sorteando a carta
+			CartaBaralho carta = baralho.getCartaBaralho();
+			totalPontos += carta.getValorCarta();
+			//Mostrando a carta
+			System.out.println(carta.getCartaAscii());
+			
+			if (totalPontos>21) {
+				break; //terminar por estouro de pontos
+			}
+			System.out.println("Deseja continuar? (S/N)");
+			continuar = sc.next().charAt(0);
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+package br.com.senaisp.richard.licao06;
+
+public class TesteArgumentosLinhaComando {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
