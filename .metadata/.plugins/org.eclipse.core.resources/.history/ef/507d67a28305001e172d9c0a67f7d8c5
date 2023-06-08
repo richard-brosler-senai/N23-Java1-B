@@ -1,0 +1,5 @@
+package br.com.senaisp.richard.projeto;
+
+public class ProdutoFilho extends Produto {
+
+}

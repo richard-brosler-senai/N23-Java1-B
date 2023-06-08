@@ -1,0 +1,16 @@
+package br.com.senaisp.richard.licao07;
+
+public class ConectorDados {
+	//Design pattern Singleton
+	private static ConectorDados instancia;
+	private ConectorDados() {
+		instancia = null;
+	}
+	
+	public static ConectorDados getInstance() {
+		if (instancia == null) {
+			instancia = new ConectorDados();
+		}
+		return instancia;
+	}
+}

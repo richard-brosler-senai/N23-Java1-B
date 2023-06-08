@@ -1,0 +1,9 @@
+package br.com.senaisp.richard.licao07;
+
+public class TesteParametrosVariaveis {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

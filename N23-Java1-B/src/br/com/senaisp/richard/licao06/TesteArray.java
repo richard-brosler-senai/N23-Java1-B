@@ -3,10 +3,13 @@ package br.com.senaisp.richard.licao06;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import br.com.senaisp.richard.projeto.Produto;
+
 public class TesteArray {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		Produto prod = new Produto();
 		// Definindo um vetor (array de uma dimensão)
 		double[] medias;
 		// criando o vetor

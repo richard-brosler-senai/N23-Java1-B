@@ -1,0 +1,9 @@
+package br.com.senaisp.richard.licao07;
+
+public class ConectorDados {
+
+	public ConectorDados() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

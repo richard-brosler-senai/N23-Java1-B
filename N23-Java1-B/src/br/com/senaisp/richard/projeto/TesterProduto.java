@@ -2,6 +2,7 @@ package br.com.senaisp.richard.projeto;
 
 import java.util.Scanner;
 
+
 public class TesterProduto {
 	public static final double PIII = 3.141516; // constante
 	public static final int valor2 = 0b0010; // representa 2 em binário
@@ -55,6 +56,7 @@ public class TesterProduto {
 		 */
 		// Mostrando os dados do produto
 		System.out.println(prod.toString());
+		prod = null;
 		// Mostrando o produto 2
 		System.out.println(prod2.toString());
 		
